@@ -6,16 +6,17 @@
  * @param {any} [thisArg]
  * @return {Array<T>}
  */
-Array.prototype.myFilter = function (callbackFn, thisArg) {
-  let res = [];
+// Array.prototype.myFilter = function (callbackFn, thisArg) {
+//   let res = [];
 
-  for (let i = 0; i < this.length; i++) {
-    let cbVal = callbackFn.call(thisArg, this[i], i, this);
+//   for (let i = 0; i < this.length; i++) {
+//     let cbVal = callbackFn.call(thisArg, this[i], i, this);
 
-    if (cbVal) {
-      res.push(this[i]);
-    }
-  }
+//     if (cbVal) {
+//       res.push(this[i]);
+//     }
+//   }
 
-  return res;
-};
+//   return res;
+// };
+[1, , 5].forEach((val) => console.log(val));
